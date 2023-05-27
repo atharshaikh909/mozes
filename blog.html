@@ -1,0 +1,2874 @@
+<html lang="en-US"
+    class="js svg audio canvas video supports no-touchevents displaytable display-table nthchild cssanimations bgsizecover boxshadow cssfilters csstransforms csstransitions csstransforms3d js no-touch backgroundsize csstransforms3d csstransitions desktop page-loaded">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://noemi.px-lab.com/personal-view/xmlrpc.php">
+    <link rel="icon"
+        href="https://noemi.px-lab.com/personal-view/wp-content/uploads/sites/2/2016/05/cropped-favicon.png">
+    <title>NOÉMI Personal</title>
+    <meta name="robots" content="max-image-preview:large">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!--  <link rel="dns-prefetch" href="//s.w.org">
+    <link rel="alternate" type="application/rss+xml" title="NOÉMI Personal » Feed"
+        href="https://noemi.px-lab.com/personal-view/feed/">
+    <link rel="alternate" type="application/rss+xml" title="NOÉMI Personal » Comments Feed"
+        href="https://noemi.px-lab.com/personal-view/comments/feed/">
+    <link rel="alternate" type="application/rss+xml" title="NOÉMI Personal » Homepage Comments Feed"
+        href="https://noemi.px-lab.com/personal-view/homepage/feed/">
+
+    <script src="https://connect.facebook.net/en_GB/sdk.js?hash=3c95876fc54c58c49a9192ead2c6f93b" async=""
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script id="facebook-jssdk"
+        src="//connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;version=v2.5&amp;appId=628483720624890"></script>
+    <script src="//www.googletagmanager.com/gtag/js?id=UA-82267456-1" data-cfasync="false" data-wpfc-render="false"
+        type="text/javascript" async=""></script> -->
+    <script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+        var em_version = '7.10.0';
+        var em_track_user = true;
+        var em_no_track_reason = '';
+
+        var disableStrs = [
+            'ga-disable-UA-82267456-1',
+        ];
+
+        /* Function to detect opted out users */
+        function __gtagTrackerIsOptedOut() {
+            for (var index = 0; index < disableStrs.length; index++) {
+                if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        /* Disable tracking if the opt-out cookie exists. */
+        if (__gtagTrackerIsOptedOut()) {
+            for (var index = 0; index < disableStrs.length; index++) {
+                window[disableStrs[index]] = true;
+            }
+        }
+
+        /* Opt-out function */
+        function __gtagTrackerOptout() {
+            for (var index = 0; index < disableStrs.length; index++) {
+                document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+                window[disableStrs[index]] = true;
+            }
+        }
+
+        if ('undefined' === typeof gaOptout) {
+            function gaOptout() {
+                __gtagTrackerOptout();
+            }
+        }
+        window.dataLayer = window.dataLayer || [];
+
+        window.ExactMetricsDualTracker = {
+            helpers: {},
+            trackers: {},
+        };
+        if (em_track_user) {
+            function __gtagDataLayer() {
+                dataLayer.push(arguments);
+            }
+
+            function __gtagTracker(type, name, parameters) {
+                if (!parameters) {
+                    parameters = {};
+                }
+
+                if (parameters.send_to) {
+                    __gtagDataLayer.apply(null, arguments);
+                    return;
+                }
+
+                if (type === 'event') {
+
+                    parameters.send_to = exactmetrics_frontend.ua;
+                    __gtagDataLayer(type, name, parameters);
+                } else {
+                    __gtagDataLayer.apply(null, arguments);
+                }
+            }
+
+            __gtagTracker('js', new Date());
+            __gtagTracker('set', {
+                'developer_id.dNDMyYj': true,
+            });
+            __gtagTracker('config', 'UA-82267456-1', { "forceSSL": "true" });
+            window.gtag = __gtagTracker; (function () {
+                /* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+                /* ga and __gaTracker compatibility shim. */
+                var noopfn = function () {
+                    return null;
+                };
+                var newtracker = function () {
+                    return new Tracker();
+                };
+                var Tracker = function () {
+                    return null;
+                };
+                var p = Tracker.prototype;
+                p.get = noopfn;
+                p.set = noopfn;
+                p.send = function () {
+                    var args = Array.prototype.slice.call(arguments);
+                    args.unshift('send');
+                    __gaTracker.apply(null, args);
+                };
+                var __gaTracker = function () {
+                    var len = arguments.length;
+                    if (len === 0) {
+                        return;
+                    }
+                    var f = arguments[len - 1];
+                    if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+                        if ('send' === arguments[0]) {
+                            var hitConverted, hitObject = false, action;
+                            if ('event' === arguments[1]) {
+                                if ('undefined' !== typeof arguments[3]) {
+                                    hitObject = {
+                                        'eventAction': arguments[3],
+                                        'eventCategory': arguments[2],
+                                        'eventLabel': arguments[4],
+                                        'value': arguments[5] ? arguments[5] : 1,
+                                    }
+                                }
+                            }
+                            if ('pageview' === arguments[1]) {
+                                if ('undefined' !== typeof arguments[2]) {
+                                    hitObject = {
+                                        'eventAction': 'page_view',
+                                        'page_path': arguments[2],
+                                    }
+                                }
+                            }
+                            if (typeof arguments[2] === 'object') {
+                                hitObject = arguments[2];
+                            }
+                            if (typeof arguments[5] === 'object') {
+                                Object.assign(hitObject, arguments[5]);
+                            }
+                            if ('undefined' !== typeof arguments[1].hitType) {
+                                hitObject = arguments[1];
+                                if ('pageview' === hitObject.hitType) {
+                                    hitObject.eventAction = 'page_view';
+                                }
+                            }
+                            if (hitObject) {
+                                action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+                                hitConverted = mapArgs(hitObject);
+                                __gtagTracker('event', action, hitConverted);
+                            }
+                        }
+                        return;
+                    }
+
+                    function mapArgs(args) {
+                        var arg, hit = {};
+                        var gaMap = {
+                            'eventCategory': 'event_category',
+                            'eventAction': 'event_action',
+                            'eventLabel': 'event_label',
+                            'eventValue': 'event_value',
+                            'nonInteraction': 'non_interaction',
+                            'timingCategory': 'event_category',
+                            'timingVar': 'name',
+                            'timingValue': 'value',
+                            'timingLabel': 'event_label',
+                            'page': 'page_path',
+                            'location': 'page_location',
+                            'title': 'page_title',
+                        };
+                        for (arg in args) {
+                            if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+                                hit[gaMap[arg]] = args[arg];
+                            } else {
+                                hit[arg] = args[arg];
+                            }
+                        }
+                        return hit;
+                    }
+
+                    try {
+                        f.hitCallback();
+                    } catch (ex) {
+                    }
+                };
+                __gaTracker.create = newtracker;
+                __gaTracker.getByName = newtracker;
+                __gaTracker.getAll = function () {
+                    return [];
+                };
+                __gaTracker.remove = noopfn;
+                __gaTracker.loaded = true;
+                window['__gaTracker'] = __gaTracker;
+            })();
+        } else {
+            console.log("");
+            (function () {
+                function __gtagTracker() {
+                    return null;
+                }
+
+                window['__gtagTracker'] = __gtagTracker;
+                window['gtag'] = __gtagTracker;
+            })();
+        }
+    </script>
+
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/noemi.px-lab.com\/personal-view\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.6" } };
+        !function (e, a, t) { var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d"); function s(e, t) { var a = String.fromCharCode; p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0); e = i.toDataURL(); return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL() } function c(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (o = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)t.supports[o[r]] = function (e) { if (!p || !p.fillText) return !1; switch (p.textBaseline = "top", p.font = "600 32px Arial", e) { case "flag": return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]); case "emoji": return !s([10084, 65039, 8205, 55357, 56613], [10084, 65039, 8203, 55357, 56613]) }return !1 }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <script src="https://noemi.px-lab.com/personal-view/wp-includes/js/wp-emoji-release.min.js?ver=5.8.6"
+        type="text/javascript" defer=""></script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" id="wp-block-library-css"
+        href="https://noemi.px-lab.com/personal-view/wp-includes/css/dist/block-library/style.min.css?ver=5.8.6"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="contact-form-7-css"
+        href="https://noemi.px-lab.com/personal-view/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.4"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="extendify-utilities-css"
+        href="https://noemi.px-lab.com/personal-view/wp-content/plugins/redux-framework/extendify-sdk/public/build/extendify-utilities.css?ver=0.1.0"
+        type="text/css" media="all"> -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+    <link rel="stylesheet" id="Open+Sans-css"
+        href="https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C700italic%2C800italic%2C400%2C300%2C600%2C700%2C800&amp;ver=5.8.6"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="Josefin+Sans-css"
+        href="https://fonts.googleapis.com/css?family=Josefin+Sans%3A400%2C300%2C600%2C700%2C800&amp;ver=5.8.6"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="Mrs+Sheppards-css"
+        href="https://fonts.googleapis.com/css?family=Mrs+Sheppards%3A400%2C300%2C600%2C700%2C800&amp;ver=5.8.6"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="plugins-css-css"
+        href="https://noemi.px-lab.com/personal-view/wp-content/themes/noemi/css/plugins.min.css?ver=5.8.6"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="icon-fonts-css"
+        href="https://noemi.px-lab.com/personal-view/wp-content/themes/noemi/fonts/icon-fonts/style.css?ver=5.8.6"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="noemi-style-css"
+        href="https://noemi.px-lab.com/personal-view/wp-content/themes/noemi/css/style.min.css?ver=5.8.6"
+        type="text/css" media="all">
+    <script type="text/javascript"
+        src="https://noemi.px-lab.com/personal-view/wp-content/plugins/google-analytics-dashboard-for-wp/assets/js/frontend-gtag.min.js?ver=7.10.0"
+        id="exactmetrics-frontend-script-js"></script>
+    <script data-cfasync="false" data-wpfc-render="false" type="text/javascript"
+        id="exactmetrics-frontend-script-js-extra">/* <![CDATA[ */
+            var exactmetrics_frontend = { "js_events_tracking": "true", "download_extensions": "zip,mp3,mpeg,pdf,docx,pptx,xlsx,rar", "inbound_paths": "[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]", "home_url": "https:\/\/noemi.px-lab.com\/personal-view", "hash_tracking": "false", "ua": "UA-82267456-1", "v4_id": "" };/* ]]> */
+        </script>
+    <script type="text/javascript"
+        src="https://noemi.px-lab.com/personal-view/wp-includes/js/jquery/jquery.min.js?ver=3.6.0"
+        id="jquery-core-js"></script>
+    <script type="text/javascript"
+        src="https://noemi.px-lab.com/personal-view/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2"
+        id="jquery-migrate-js"></script>
+   <!--  <link rel="https://api.w.org/" href="https://noemi.px-lab.com/personal-view/wp-json/">
+    <link rel="alternate" type="application/json" href="https://noemi.px-lab.com/personal-view/wp-json/wp/v2/pages/2">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD"
+        href="https://noemi.px-lab.com/personal-view/xmlrpc.php?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+        href="https://noemi.px-lab.com/personal-view/wp-includes/wlwmanifest.xml">
+    <meta name="generator" content="WordPress 5.8.6">
+    <link rel="canonical" href="https://noemi.px-lab.com/personal-view/">
+    <link rel="shortlink" href="https://noemi.px-lab.com/personal-view/">
+    <link rel="alternate" type="application/json+oembed"
+        href="https://noemi.px-lab.com/personal-view/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnoemi.px-lab.com%2Fpersonal-view%2F">
+    <link rel="alternate" type="text/xml+oembed"
+        href="https://noemi.px-lab.com/personal-view/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnoemi.px-lab.com%2Fpersonal-view%2F&amp;format=xml"> -->
+    <meta name="framework" content="Redux 4.3.7"><!--[if lt IE]><![endif]-->
+    <style type="text/css">
+        html,
+        body,
+        select,
+        textarea,
+        input,
+        .btn,
+        button,
+        button[type='submit'],
+        input[type='submit'],
+        .togglebox-header,
+        .accordion-header {
+            font-family: "Open Sans";
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        .site-title,
+        .featured-area .featured-items a .title,
+        .post-navigation a .post-title,
+        section.error-404 .text,
+        #preloader .content {
+            font-family: "Josefin Sans";
+        }
+
+        .widget_about .widget-sub-title,
+        .author-vcard .sub-title,
+        #footer .footer-bottom #top,
+        .instagram-footer .sub-title {
+            font-family: "Mrs Sheppards";
+        }
+
+        a,
+        .entry-content .more-link,
+        .widget-social ul li a:hover,
+        .list.standard .entry-content::first-letter,
+        .sticky .entry-header:after,
+        #footer .footer-bottom #top:hover,
+        .instagram-footer .sub-title,
+        section.error-404 .back:hover,
+        .author-vcard .sub-title,
+        .comments .comment-list li .comment-body .comment-reply-link,
+        .comments .comment-list li .comment-body .comment-metadata .comment-edit-link,
+        .comments .comment-reply-title #cancel-comment-reply-link,
+        .post-navigation a .meta-nav,
+        .widget_recent_comments .recentcomments:before,
+        .entry-header h1 a:hover,
+        .entry-header h2 a:hover,
+        .entry-header .cat-links,
+        .featured-area .featured-carousel .slide-content .cat-links,
+        .featured-area .featured-slider .slide-content .cat-links,
+/*        .mobile-navigation-wrapper .mobile-navigation ul li.menu-item-has-children>a:after,
+        .mobile-navigation-wrapper .mobile-navigation ul li.menu-item-has-children>a:before,
+        .mobile-navigation-wrapper .mobile-navigation ul li a:hover,
+        .menu-button:hover,*/
+        .main-navigation ul>li.current-menu-item>a,
+        .main-navigation ul>li:hover>a,
+        .widget_calendar table tfoot td a,
+        .widget_calendar table th,
+        .widget_about .widget-sub-title,
+        .social li a:hover,
+        .more-link:hover,
+        .text-dropcup.primary-color,
+        .widget_recent_entries a:hover,
+        .widget_categories li,
+        .widget_archive li,
+        .widget_pages li,
+        .widget_meta li,
+        .widget_categories li a:hover,
+        .widget_archive li a:hover,
+        .widget_pages li a:hover,
+        .widget_meta li a:hover,
+        .btn-link,
+        .btn-primary-outline {
+            color: #caaaac
+        }
+
+        .simple-page .entry-header h1:before,
+        article.attachment .entry-header h1:before,
+        .post-thumbnail .play-button .icon:after,
+        .header .social-box.social-toggle-mb.open .social-button,
+        .comments .bypostauthor .vcard b,
+        #preloader .corner,
+        .page-template-default .entry-header h1:before,
+        .mejs-container .mejs-overlay-button,
+        .mejs-container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
+        .mejs-container .mejs-controls div.mejs-time-rail .mejs-time-current,
+        .mejs-container .mejs-controls .mejs-play,
+        .mejs-container .mejs-controls .mejs-pause,
+        .swiper-pagination-bullet-active:before,
+        .header .top-search.open .form-toggle,
+        .header .top-search .form-toggle:hover,
+        .header .social-box ul li a:hover,
+        .mobile-navigation-wrapper .menu-close,
+        .search-post .post-thumbnail:before,
+        .menu-button,
+        .header.style-two .branding:before,
+        .widget_calendar table th a,
+        .widget_calendar table td a,
+        .widget-title:before,
+        .tooltip:before,
+        .text-highlight.primary-color,
+        .pagination .page-numbers.current,
+        .page-links .current,
+        .btn-primary-outline:hover,
+        .btn-default,
+        .btn-primary,
+        button[type='submit'],
+        input[type='submit'] {
+            background-color: #caaaac
+        }
+
+        .widget-social .vertical ul:before,
+        .post-navigation a:hover,
+        .single-post .post .entry-footer .post-tags a:hover:before,
+        .entry-header::before,
+        .featured-area .featured-items a .title:before,
+        .featured-area .featured-carousel .slide-content:before,
+        .featured-area .featured-slider .slide-content-brd:before,
+        .menu-button,
+        .widget_tag_cloud .tagcloud a:hover:before,
+        .widget_about .content:before,
+        .btn-primary-outline,
+        .btn-default,
+        .btn-primary,
+        .wp-caption .wp-caption-text:before,
+        .wp-caption-dd:before,
+        blockquote {
+            border-color: #caaaac
+        }
+
+        .entry-content a {
+            color: #caaaac
+        }
+
+        hr.primary-color,
+        .tooltip:after {
+            border-top-color: #caaaac
+        }
+    </style>
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <style type="text/css"
+        data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">
+        .fb_hidden {
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_reposition {
+            overflow: hidden;
+            position: relative
+        }
+
+        .fb_invisible {
+            display: none
+        }
+
+        .fb_reset {
+            background: none;
+            border: 0;
+            border-spacing: 0;
+            color: #000;
+            cursor: auto;
+            direction: ltr;
+            font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-height: 1;
+            margin: 0;
+            overflow: visible;
+            padding: 0;
+            text-align: left;
+            text-decoration: none;
+            text-indent: 0;
+            text-shadow: none;
+            text-transform: none;
+            visibility: visible;
+            white-space: normal;
+            word-spacing: normal
+        }
+
+        .fb_reset>div {
+            overflow: hidden
+        }
+
+        @keyframes fb_transform {
+            from {
+                opacity: 0;
+                transform: scale(.95)
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        .fb_animate {
+            animation: fb_transform .3s forwards
+        }
+
+        .fb_hidden {
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_reposition {
+            overflow: hidden;
+            position: relative
+        }
+
+        .fb_invisible {
+            display: none
+        }
+
+        .fb_reset {
+            background: none;
+            border: 0;
+            border-spacing: 0;
+            color: #000;
+            cursor: auto;
+            direction: ltr;
+            font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+            font-size: 11px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-height: 1;
+            margin: 0;
+            overflow: visible;
+            padding: 0;
+            text-align: left;
+            text-decoration: none;
+            text-indent: 0;
+            text-shadow: none;
+            text-transform: none;
+            visibility: visible;
+            white-space: normal;
+            word-spacing: normal
+        }
+
+        .fb_reset>div {
+            overflow: hidden
+        }
+
+        @keyframes fb_transform {
+            from {
+                opacity: 0;
+                transform: scale(.95)
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        .fb_animate {
+            animation: fb_transform .3s forwards
+        }
+
+        .fb_dialog {
+            background: rgba(82, 82, 82, .7);
+            position: absolute;
+            top: -10000px;
+            z-index: 10001
+        }
+
+        .fb_dialog_advanced {
+            border-radius: 8px;
+            padding: 10px
+        }
+
+        .fb_dialog_content {
+            background: #fff;
+            color: #373737
+        }
+
+        .fb_dialog_close_icon {
+            background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
+            cursor: pointer;
+            display: block;
+            height: 15px;
+            position: absolute;
+            right: 18px;
+            top: 17px;
+            width: 15px
+        }
+
+        .fb_dialog_mobile .fb_dialog_close_icon {
+            left: 5px;
+            right: auto;
+            top: 5px
+        }
+
+        .fb_dialog_padding {
+            background-color: transparent;
+            position: absolute;
+            width: 1px;
+            z-index: -1
+        }
+
+        .fb_dialog_close_icon:hover {
+            background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent
+        }
+
+        .fb_dialog_close_icon:active {
+            background: url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent
+        }
+
+        .fb_dialog_iframe {
+            line-height: 0
+        }
+
+        .fb_dialog_content .dialog_title {
+            background: #6d84b4;
+            border: 1px solid #365899;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0
+        }
+
+        .fb_dialog_content .dialog_title>span {
+            background: url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
+            float: left;
+            padding: 5px 0 7px 26px
+        }
+
+        body.fb_hidden {
+            height: 100%;
+            left: 0;
+            margin: 0;
+            overflow: visible;
+            position: absolute;
+            top: -10000px;
+            transform: none;
+            width: 100%
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading {
+            background: url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
+            min-height: 100%;
+            min-width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 10001
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered {
+            background: none;
+            height: auto;
+            min-height: initial;
+            min-width: initial;
+            width: auto
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
+            width: 100%
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
+            background: none
+        }
+
+        .loading.centered #fb_dialog_loader_close {
+            clear: both;
+            color: #fff;
+            display: block;
+            font-size: 18px;
+            padding-top: 20px
+        }
+
+        #fb-root #fb_dialog_ipad_overlay {
+            background: rgba(0, 0, 0, .4);
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 10000
+        }
+
+        #fb-root #fb_dialog_ipad_overlay.hidden {
+            display: none
+        }
+
+        .fb_dialog.fb_dialog_mobile.loading iframe {
+            visibility: hidden
+        }
+
+        .fb_dialog_mobile .fb_dialog_iframe {
+            position: sticky;
+            top: 0
+        }
+
+        .fb_dialog_content .dialog_header {
+            background: linear-gradient(from(#738aba), to(#2c4987));
+            border-bottom: 1px solid;
+            border-color: #043b87;
+            box-shadow: white 0 1px 1px -1px inset;
+            color: #fff;
+            font: bold 14px Helvetica, sans-serif;
+            text-overflow: ellipsis;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
+            vertical-align: middle;
+            white-space: nowrap
+        }
+
+        .fb_dialog_content .dialog_header table {
+            height: 43px;
+            width: 100%
+        }
+
+        .fb_dialog_content .dialog_header td.header_left {
+            font-size: 12px;
+            padding-left: 5px;
+            vertical-align: middle;
+            width: 60px
+        }
+
+        .fb_dialog_content .dialog_header td.header_right {
+            font-size: 12px;
+            padding-right: 5px;
+            vertical-align: middle;
+            width: 60px
+        }
+
+        .fb_dialog_content .touchable_button {
+            background: linear-gradient(from(#4267B2), to(#2a4887));
+            background-clip: padding-box;
+            border: 1px solid #29487d;
+            border-radius: 3px;
+            display: inline-block;
+            line-height: 18px;
+            margin-top: 3px;
+            max-width: 85px;
+            padding: 4px 12px;
+            position: relative
+        }
+
+        .fb_dialog_content .dialog_header .touchable_button input {
+            background: none;
+            border: none;
+            color: #fff;
+            font: bold 12px Helvetica, sans-serif;
+            margin: 2px -12px;
+            padding: 2px 6px 3px 6px;
+            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
+        }
+
+        .fb_dialog_content .dialog_header .header_center {
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 18px;
+            text-align: center;
+            vertical-align: middle
+        }
+
+        .fb_dialog_content .dialog_content {
+            background: url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
+            border: 1px solid #4a4a4a;
+            border-bottom: 0;
+            border-top: 0;
+            height: 150px
+        }
+
+        .fb_dialog_content .dialog_footer {
+            background: #f5f6f7;
+            border: 1px solid #4a4a4a;
+            border-top-color: #ccc;
+            height: 40px
+        }
+
+        #fb_dialog_loader_close {
+            float: left
+        }
+
+        .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
+            visibility: hidden
+        }
+
+        #fb_dialog_loader_spinner {
+            animation: rotateSpinner 1.2s linear infinite;
+            background-color: transparent;
+            background-image: url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            height: 24px;
+            width: 24px
+        }
+
+        @keyframes rotateSpinner {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        .fb_iframe_widget {
+            display: inline-block;
+            position: relative
+        }
+
+        .fb_iframe_widget span {
+            display: inline-block;
+            position: relative;
+            text-align: justify
+        }
+
+        .fb_iframe_widget iframe {
+            position: absolute
+        }
+
+        .fb_iframe_widget_fluid_desktop,
+        .fb_iframe_widget_fluid_desktop span,
+        .fb_iframe_widget_fluid_desktop iframe {
+            max-width: 100%
+        }
+
+        .fb_iframe_widget_fluid_desktop iframe {
+            min-width: 220px;
+            position: relative
+        }
+
+        .fb_iframe_widget_lift {
+            z-index: 1
+        }
+
+        .fb_iframe_widget_fluid {
+            display: inline
+        }
+
+        .fb_iframe_widget_fluid span {
+            width: 100%
+        }
+
+        .fb_mpn_mobile_landing_page_slide_out {
+            animation-duration: 200ms;
+            animation-name: fb_mpn_landing_page_slide_out;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_landing_page_slide_out_from_left {
+            animation-duration: 200ms;
+            animation-name: fb_mpn_landing_page_slide_out_from_left;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_landing_page_slide_up {
+            animation-duration: 500ms;
+            animation-name: fb_mpn_landing_page_slide_up;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_bounce_in {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_bounce_in;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_bounce_out {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_bounce_out;
+            transition-timing-function: ease-in
+        }
+
+        .fb_mpn_mobile_bounce_out_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_mpn_fade_out;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_in_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_in_v2;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_in_from_left {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_in_from_left;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_out_v2 {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_out_v2;
+            transition-timing-function: ease-in
+        }
+
+        .fb_customer_chat_bounce_out_from_left {
+            animation-duration: 300ms;
+            animation-name: fb_bounce_out_from_left;
+            transition-timing-function: ease-in
+        }
+
+        .fb_invisible_flow {
+            display: inherit;
+            height: 0;
+            overflow-x: hidden;
+            width: 0
+        }
+
+        @keyframes fb_mpn_landing_page_slide_out {
+            0% {
+                margin: 0 12px;
+                width: 100% - 24px
+            }
+
+            60% {
+                border-radius: 18px
+            }
+
+            100% {
+                border-radius: 50%;
+                margin: 0 24px;
+                width: 60px
+            }
+        }
+
+        @keyframes fb_mpn_landing_page_slide_out_from_left {
+            0% {
+                left: 12px;
+                width: 100% - 24px
+            }
+
+            60% {
+                border-radius: 18px
+            }
+
+            100% {
+                border-radius: 50%;
+                left: 12px;
+                width: 60px
+            }
+        }
+
+        @keyframes fb_mpn_landing_page_slide_up {
+            0% {
+                bottom: 0;
+                opacity: 0
+            }
+
+            100% {
+                bottom: 24px;
+                opacity: 1
+            }
+        }
+
+        @keyframes fb_mpn_bounce_in {
+            0% {
+                opacity: .5;
+                top: 100%
+            }
+
+            100% {
+                opacity: 1;
+                top: 0
+            }
+        }
+
+        @keyframes fb_mpn_fade_out {
+            0% {
+                bottom: 30px;
+                opacity: 1
+            }
+
+            100% {
+                bottom: 0;
+                opacity: 0
+            }
+        }
+
+        @keyframes fb_mpn_bounce_out {
+            0% {
+                opacity: 1;
+                top: 0
+            }
+
+            100% {
+                opacity: .5;
+                top: 100%
+            }
+        }
+
+        @keyframes fb_bounce_in_v2 {
+            0% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom right
+            }
+
+            50% {
+                transform: scale(1.03, 1.03);
+                transform-origin: bottom right
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom right
+            }
+        }
+
+        @keyframes fb_bounce_in_from_left {
+            0% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom left
+            }
+
+            50% {
+                transform: scale(1.03, 1.03);
+                transform-origin: bottom left
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom left
+            }
+        }
+
+        @keyframes fb_bounce_out_v2 {
+            0% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom right
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom right
+            }
+        }
+
+        @keyframes fb_bounce_out_from_left {
+            0% {
+                opacity: 1;
+                transform: scale(1, 1);
+                transform-origin: bottom left
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(0, 0);
+                transform-origin: bottom left
+            }
+        }
+
+        @keyframes slideInFromBottom {
+            0% {
+                opacity: .1;
+                transform: translateY(100%)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes slideInFromBottomDelay {
+            0% {
+                opacity: 0;
+                transform: translateY(100%)
+            }
+
+            97% {
+                opacity: 0;
+                transform: translateY(100%)
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+    </style>
+    <style type="text/css">
+        .z11{
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="home page-template-default page page-id-5 no-sidebar masthead-fixed no-title-frame" data-color="#86ccc1">
+    <div class="page-wrapper"style="background: radial-gradient(#e66465, #9198e5);">
+    <div class="mobile-navigation-wrapper">
+        <button id="menu-close" class="menu-close"><i class="icon icon-close"></i></button>
+            <div class="holder">
+                <nav id="mobile-navigation" class="mobile-navigation">
+                    <div class="menu-menu-container">
+                        <ul>
+                            <li id="menu-item-191">
+                                <a href="#" aria-current="page">Home </a>
+                                <!-- <ul class="sub-menu">
+                                    <li id="menu-item-285"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-285"><a
+                                            href="https://noemi.px-lab.com/modern">Modern</a></li>
+                                    <li id="menu-item-252"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-252">
+                                        <a href="https://noemi.px-lab.com/personal-view/"
+                                            aria-current="page">Personal</a></li>
+                                    <li id="menu-item-284"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-284"><a
+                                            href="https://noemi.px-lab.com/">Casual</a></li>
+                                    <li id="menu-item-515"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-515"><a
+                                            href="https://noemi.px-lab.com/architect/">Architect</a></li>
+                                    <li id="menu-item-516"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-516"><a
+                                            href="https://noemi.px-lab.com/recipes/">Recipes</a></li>
+                                    <li id="menu-item-517"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-517"><a
+                                            href="https://noemi.px-lab.com/fashion/">Fashion</a></li>
+                                    <li id="menu-item-518"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-518"><a
+                                            href="https://goo.gl/EeJWsd">Buy Noemi</a></li>
+                                </ul> -->
+                            </li>
+                             <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-190">
+                                            <a href="#">My Story <i class="fa-solid fa-caret-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-183">
+                                                    <a
+                                                        href="mission.html">Mission</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-184">
+                                                    <a
+                                                        href="story.html">Success Story</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-185">
+                                                    <a
+                                                        href="case.html">Case Studies</a>
+                                                </li>
+                                                <!-- <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-186">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/beauty/">Beauty</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/sport/">Sport</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-188">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/yoga/">Yoga</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-189">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/nutrition/">Nutrition</a>
+                                                </li> -->
+                                            </ul>
+                                        </li>
+                            <li id="menu-item-214"
+                                class="menu-item menu-item-type-custom  menu-item-214">
+                                <a href="#">Media<i class="fa-solid fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-475"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-475">
+                                        <a href="blog.html">Blogs</a></li>
+                                    <li id="menu-item-217"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217">
+                                        <a href="magazine.html">Magazine</a></li>
+                                    <li id="menu-item-370"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370">
+                                        <a href="article1.html">
+                                            Articles</a></li>
+                                   <!--  <li id="menu-item-219"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-219">
+                                        <a href="https://noemi.px-lab.com/personal-view/masonry/">Masonry</a></li>
+                                    <li id="menu-item-221"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221">
+                                        <a href="https://noemi.px-lab.com/personal-view/visual-right-1/">Visual Right
+                                            1</a></li>
+                                    <li id="menu-item-224"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-224">
+                                        <a href="https://noemi.px-lab.com/personal-view/visual-right-2/">Visual Right
+                                            2</a></li>
+                                    <li id="menu-item-374"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374">
+                                        <a href="https://noemi.px-lab.com/personal-view/visual-left-1/">Visual Left
+                                            1</a></li>
+                                    <li id="menu-item-223"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223">
+                                        <a href="https://noemi.px-lab.com/personal-view/visual-left-2/">Visual Left
+                                            2</a></li>
+                                    <li id="menu-item-222"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-222">
+                                        <a href="https://noemi.px-lab.com/personal-view/fusion-1/">Fusion 1</a></li>
+                                    <li id="menu-item-225"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-225">
+                                        <a href="https://noemi.px-lab.com/personal-view/fusion-2/">Fusion 2</a></li> -->
+                                </ul>
+                            </li>
+                            <li id="menu-item-193"
+                                class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-193">
+                                <a href="interest.html">Interest</a>
+                                <!-- <ul class="sub-menu">
+                                    <li id="menu-item-194"
+                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-194">
+                                        <a href="https://noemi.px-lab.com/personal-view/2016/05/05/ustrasana/">Image
+                                            Post</a></li>
+                                    <li id="menu-item-195"
+                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-195">
+                                        <a href="https://noemi.px-lab.com/personal-view/2016/04/11/citrus/">Slider
+                                            Post</a></li>
+                                    <li id="menu-item-201"
+                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-201">
+                                        <a
+                                            href="https://noemi.px-lab.com/personal-view/2016/05/16/think-green-eat-green/">Video
+                                            Post</a></li>
+                                    <li id="menu-item-206"
+                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-206">
+                                        <a href="https://noemi.px-lab.com/personal-view/2016/04/20/roller-skating/">Vimeo
+                                            Post</a></li>
+                                    <li id="menu-item-211"
+                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-211">
+                                        <a href="https://noemi.px-lab.com/personal-view/2016/04/01/surf-surf-surf/">Dailymotion
+                                            post</a></li>
+                                    <li id="menu-item-212"
+                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-212">
+                                        <a
+                                            href="https://noemi.px-lab.com/personal-view/2016/03/10/porta-pulvinar-integer/">Soundcloud
+                                            post</a></li>
+                                    <li id="menu-item-213"
+                                        class="menu-item menu-item-type-post_type menu-item-object-post menu-item-213">
+                                        <a href="https://noemi.px-lab.com/personal-view/2016/05/16/dillon/">Audio
+                                            post</a></li>
+                                </ul> -->
+                            </li>
+                            <li id="menu-item-228"
+                                class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-228">
+                                <a href="#">NewsLetters</a>
+                                <!-- <ul class="sub-menu">
+                                    <li id="menu-item-215"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-215">
+                                        <a href="https://noemi.px-lab.com/personal-view/typography/">Typography</a></li>
+                                    <li id="menu-item-229"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229">
+                                        <a href="https://noemi.px-lab.com/personal-view/components/">Components</a></li>
+                                    <li id="menu-item-230"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-230"><a
+                                            href="https://noemi.px-lab.com/personal-view/?s=a">Search results</a></li>
+                                    <li id="menu-item-375"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375">
+                                        <a href="https://noemi.px-lab.com/personal-view/right-sidebar/">Right
+                                            Sidebar</a></li>
+                                    <li id="menu-item-232"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232">
+                                        <a href="https://noemi.px-lab.com/personal-view/left-sidebar/">Left Sidebar</a>
+                                    </li>
+                                    <li id="menu-item-233"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233">
+                                        <a href="https://noemi.px-lab.com/personal-view/no-sidebar/">No Sidebar</a></li>
+                                    <li id="menu-item-234"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-234"><a
+                                            href="https://noemi.px-lab.com/personal-view/404-page">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-190"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-190">
+                                <a href="#">Categories</a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-183"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-183">
+                                        <a
+                                            href="https://noemi.px-lab.com/personal-view/category/lifestyle/">Lifestyle</a>
+                                    </li>
+                                    <li id="menu-item-184"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-184">
+                                        <a href="https://noemi.px-lab.com/personal-view/category/health/">Health</a>
+                                    </li>
+                                    <li id="menu-item-185"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-185">
+                                        <a href="https://noemi.px-lab.com/personal-view/category/music/">Music</a></li>
+                                    <li id="menu-item-186"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-186">
+                                        <a href="https://noemi.px-lab.com/personal-view/category/beauty/">Beauty</a>
+                                    </li>
+                                    <li id="menu-item-187"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187">
+                                        <a href="https://noemi.px-lab.com/personal-view/category/sport/">Sport</a></li>
+                                    <li id="menu-item-188"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-188">
+                                        <a href="https://noemi.px-lab.com/personal-view/category/yoga/">Yoga</a></li>
+                                    <li id="menu-item-189"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-189">
+                                        <a
+                                            href="https://noemi.px-lab.com/personal-view/category/nutrition/">Nutrition</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li id="menu-item-192"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-192"><a
+                                    href="https://noemi.px-lab.com/personal-view/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <header id="header" class="header style-one boxed bg-dark">
+            <div class="fixed-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12">
+                            <div id="branding" class="branding">
+                                <p class="site-title"><a href="mg1.html"> <img src="img/logo8.svg" style="height:50px"></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-3 col-xs-3">
+                            <button class="menu-button "style="background: radial-gradient(#e66465, #9198e5);"><i class="fa-solid fa-bars"></i></button>
+                            <nav id="main-navigation" class="main-navigation">
+                                <div class="menu-menu-container">
+                                    <ul>
+                                        <li
+                                            >
+                                            <a href="mg1.html"
+                                                aria-current="page">Home</a>
+                                           <!--  <ul class="sub-menu">
+                                                <li
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-285">
+                                                    <a href="https://noemi.px-lab.com/modern">Modern</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-252">
+                                                    <a href="https://noemi.px-lab.com/personal-view/"
+                                                        aria-current="page">Personal</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-284">
+                                                    <a href="https://noemi.px-lab.com/">Casual</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-515">
+                                                    <a href="https://noemi.px-lab.com/architect/">Architect</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-516">
+                                                    <a href="https://noemi.px-lab.com/recipes/">Recipes</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-517">
+                                                    <a href="https://noemi.px-lab.com/fashion/">Fashion</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-518">
+                                                    <a href="https://goo.gl/EeJWsd">Buy Noemi</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-190">
+                                            <a href="#">My Story <i class="fa-solid fa-caret-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-183">
+                                                    <a
+                                                        href="mission.html">Mission</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-184">
+                                                    <a
+                                                        href="story.html">Success Story</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-185">
+                                                    <a
+                                                        href="case.html">Case Studies</a>
+                                                </li>
+                                                <!-- <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-186">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/beauty/">Beauty</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/sport/">Sport</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-188">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/yoga/">Yoga</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-189">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/nutrition/">Nutrition</a>
+                                                </li> -->
+                                            </ul>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-214">
+                                            <a href="#">Media</a>
+                                            <ul class="sub-menu">
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-475">
+                                                    <a
+                                                        href="blog.html">Blogs</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217">
+                                                    <a href="magazine.html">
+                                                        Magazine</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370">
+                                                    <a href="article1.html">Article</a></li>
+                                              <!--   <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-219">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/masonry/">Masonry</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221">
+                                                    <a href="https://noemi.px-lab.com/personal-view/visual-right-1/">Visual
+                                                        Right 1</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-224">
+                                                    <a href="https://noemi.px-lab.com/personal-view/visual-right-2/">Visual
+                                                        Right 2</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374">
+                                                    <a href="https://noemi.px-lab.com/personal-view/visual-left-1/">Visual
+                                                        Left 1</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223">
+                                                    <a href="https://noemi.px-lab.com/personal-view/visual-left-2/">Visual
+                                                        Left 2</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-222">
+                                                    <a href="https://noemi.px-lab.com/personal-view/fusion-1/">Fusion
+                                                        1</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-225">
+                                                    <a href="https://noemi.px-lab.com/personal-view/fusion-2/">Fusion
+                                                        2</a></li> -->
+                                            </ul>
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-193">
+                                            <a href="interest.html">Interest</a>
+                                            <!-- <ul class="sub-menu">
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-194">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/2016/05/05/ustrasana/">Image
+                                                        Post</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-195">
+                                                    <a href="https://noemi.px-lab.com/personal-view/2016/04/11/citrus/">Slider
+                                                        Post</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-201">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/2016/05/16/think-green-eat-green/">Video
+                                                        Post</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-206">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/2016/04/20/roller-skating/">Vimeo
+                                                        Post</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-211">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/2016/04/01/surf-surf-surf/">Dailymotion
+                                                        post</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-212">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/2016/03/10/porta-pulvinar-integer/">Soundcloud
+                                                        post</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-213">
+                                                    <a href="https://noemi.px-lab.com/personal-view/2016/05/16/dillon/">Audio
+                                                        post</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-228">
+                                            <a href="newsletter.html">NewsLetter</a>
+                                          <!--   <ul class="sub-menu">
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-215">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/typography/">Typography</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/components/">Components</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-230">
+                                                    <a href="https://noemi.px-lab.com/personal-view/?s=a">Search
+                                                        results</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375">
+                                                    <a href="https://noemi.px-lab.com/personal-view/right-sidebar/">Right
+                                                        Sidebar</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232">
+                                                    <a href="https://noemi.px-lab.com/personal-view/left-sidebar/">Left
+                                                        Sidebar</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233">
+                                                    <a href="https://noemi.px-lab.com/personal-view/no-sidebar/">No
+                                                        Sidebar</a></li>
+                                                <li
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-234">
+                                                    <a href="https://noemi.px-lab.com/personal-view/404-page">404
+                                                        Page</a></li>
+                                            </ul> -->
+                                        </li>
+                                        
+                                        <li
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-192">
+                                            <a href="https://noemi.px-lab.com/personal-view/contact/">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-9 col-xs-9">
+                            <div class="top-search">
+                                <button class=" js-toggle"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <!-- <button class="form-toggle js-toggle"></button> -->
+                                <form role="search" method="get" class="form"
+                                    action="https://noemi.px-lab.com/personal-view/">
+                                    <span class="screen-reader-text">Search for:</span>
+                                    <label>
+                                        <input type="search" class="search-field" placeholder="Search..." value=""
+                                            name="s" title="Search for:">
+                                    </label>
+                                    <button type="submit" ><i class="fa-solid fa-magnifying-glass"></i><span
+                                            class="screen-reader-text">Search</span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div id="branding" class="branding">
+                        <p class="site-title"><a href="mg1.html"> <img src="img/logo8.svg" style="height:50px"></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-3 col-xs-3">
+                    <button class="menu-button icon "style="background: radial-gradient(#e66465, #9198e5);"><i class="fa-solid fa-bars"></i></button>
+                    <nav id="main-navigation" class="main-navigation">
+                        <div class="menu-menu-container">
+                            <div class="menu-menu-container">
+                                <ul>
+                                    <li
+                                    >
+                                        <a href="mg1.html" aria-current="page">Home</a>
+                                       <!--  <ul class="sub-menu">
+                                            <li
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-285">
+                                                <a href="https://noemi.px-lab.com/modern">Modern</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-252">
+                                                <a href="https://noemi.px-lab.com/personal-view/"
+                                                    aria-current="page">Personal</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-284">
+                                                <a href="https://noemi.px-lab.com/">Casual</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-515">
+                                                <a href="https://noemi.px-lab.com/architect/">Architect</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-516">
+                                                <a href="https://noemi.px-lab.com/recipes/">Recipes</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-517">
+                                                <a href="https://noemi.px-lab.com/fashion/">Fashion</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-518">
+                                                <a href="https://goo.gl/EeJWsd">Buy Noemi</a></li>
+                                        </ul> -->
+                                    </li>
+                                     <li
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-190">
+                                            <a href="#">My Story <i class="fa-solid fa-caret-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-183">
+                                                    <a
+                                                        href="mission.html">Mission</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-184">
+                                                    <a
+                                                        href="story.html">Success Story</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-185">
+                                                    <a
+                                                        href="case.html">Case Studies</a>
+                                                </li>
+                                                <!-- <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-186">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/beauty/">Beauty</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/sport/">Sport</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-188">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/yoga/">Yoga</a>
+                                                </li>
+                                                <li
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-189">
+                                                    <a
+                                                        href="https://noemi.px-lab.com/personal-view/category/nutrition/">Nutrition</a>
+                                                </li> -->
+                                            </ul>
+                                        </li>
+                                    <li
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-214">
+                                        <a href="#">Media &nbsp;<i class="fa-solid fa-caret-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li
+                                               >
+                                                <a href="blog.html">Blogs</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217">
+                                                <a href="magazine.html">Magazine</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370">
+                                                <a href="article1.html">Articles</a></li>
+                                           <!--  <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-219">
+                                                <a href="https://noemi.px-lab.com/personal-view/masonry/">Masonry</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221">
+                                                <a href="https://noemi.px-lab.com/personal-view/visual-right-1/">Visual
+                                                    Right 1</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-224">
+                                                <a href="https://noemi.px-lab.com/personal-view/visual-right-2/">Visual
+                                                    Right 2</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374">
+                                                <a href="https://noemi.px-lab.com/personal-view/visual-left-1/">Visual
+                                                    Left 1</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223">
+                                                <a href="https://noemi.px-lab.com/personal-view/visual-left-2/">Visual
+                                                    Left 2</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-222">
+                                                <a href="https://noemi.px-lab.com/personal-view/fusion-1/">Fusion 1</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-225">
+                                                <a href="https://noemi.px-lab.com/personal-view/fusion-2/">Fusion 2</a>
+                                            </li> -->
+                                        </ul>
+                                    </li>
+                                    <li
+                                        class="menu-item menu-item-type-custom  menu-item-193">
+                                        <a href="interest.html">Interest</a>
+                                        <!-- <ul class="sub-menu">
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-194">
+                                                <a href="https://noemi.px-lab.com/personal-view/2016/05/05/ustrasana/">Image
+                                                    Post</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-195">
+                                                <a href="https://noemi.px-lab.com/personal-view/2016/04/11/citrus/">Slider
+                                                    Post</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-201">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/2016/05/16/think-green-eat-green/">Video
+                                                    Post</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-206">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/2016/04/20/roller-skating/">Vimeo
+                                                    Post</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-211">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/2016/04/01/surf-surf-surf/">Dailymotion
+                                                    post</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-212">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/2016/03/10/porta-pulvinar-integer/">Soundcloud
+                                                    post</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-213">
+                                                <a href="https://noemi.px-lab.com/personal-view/2016/05/16/dillon/">Audio
+                                                    post</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li
+                                        class="menu-item menu-item-type-custom menu-item-228">
+                                        <a href="newsletter.html">NewsLetter</a>
+                                        <!-- <ul class="sub-menu">
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-215">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/typography/">Typography</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/components/">Components</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-230">
+                                                <a href="https://noemi.px-lab.com/personal-view/?s=a">Search results</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375">
+                                                <a href="https://noemi.px-lab.com/personal-view/right-sidebar/">Right
+                                                    Sidebar</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232">
+                                                <a href="https://noemi.px-lab.com/personal-view/left-sidebar/">Left
+                                                    Sidebar</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233">
+                                                <a href="https://noemi.px-lab.com/personal-view/no-sidebar/">No
+                                                    Sidebar</a></li>
+                                            <li
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-234">
+                                                <a href="https://noemi.px-lab.com/personal-view/404-page">404 Page</a>
+                                            </li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-190">
+                                        <a href="#">Categories</a>
+                                        <ul class="sub-menu">
+                                            <li
+                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-183">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/category/lifestyle/">Lifestyle</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-184">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/category/health/">Health</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-185">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/category/music/">Music</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-186">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/category/beauty/">Beauty</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/category/sport/">Sport</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-188">
+                                                <a href="https://noemi.px-lab.com/personal-view/category/yoga/">Yoga</a>
+                                            </li>
+                                            <li
+                                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-189">
+                                                <a
+                                                    href="https://noemi.px-lab.com/personal-view/category/nutrition/">Nutrition</a>
+                                            </li>
+                                        </ul>
+                                    </li> -->
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-192">
+                                        <a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-9 col-xs-9">
+                    <div class="top-search">
+                        <button class=" js-toggle"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <form role="search" method="get" class="form" action="https://noemi.px-lab.com/personal-view/">
+                            <span class="screen-reader-text">Search for:</span>
+                            <label>
+                                <input type="search" class="search-field" placeholder="Search..." value="" name="s"
+                                    title="Search for:">
+                            </label>
+                            <button type="submit" ><i class="fa-solid fa-magnifying-glass"></i><span
+                                    class="screen-reader-text">Search</span></button><i class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+<div id="mainContainer" role="main">
+<div class="featured-area boxed">
+<div class="featured-slider swiper-container swiper-container-horizontal swiper-container-fade">
+<div class="swiper-wrapper" style="transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" style="background-image: url(img/blogg1.png); width: 350px; transform: translate3d(0px, 0px, 0px); opacity: 2; transition-duration: 0ms;" data-swiper-slide-index="2">
+<div class="slide-content" data-aos="zoom-in-up" data-aos-duration="1000">
+<div class="inner">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/interior/">Interior</a> -->
+</div>
+<h1 class="entry-title" >
+<a href="#">Blogs</a>
+</h1>
+
+</div>
+</div>
+</div>
+<div class="swiper-slide" style="background-image: url(img/blogg2.png); width: 350px; transform: translate3d(-350px, 0px, 0px); opacity: 1; transition-duration: 0ms;" data-swiper-slide-index="0">
+<div class="slide-content">
+<div class="inner">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/architecture/">Architecture</a> -->
+</div>
+<h2 class="entry-title">
+<a href="#">Blogs</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="swiper-slide" style="background-image: url(img/blogg1.png); width: 350px; transform: translate3d(-350px, 0px, 0px); opacity: 1; transition-duration: 0ms;" data-swiper-slide-index="0">
+<div class="slide-content">
+<div class="inner">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/architecture/">Architecture</a> -->
+</div>
+<h2 class="entry-title">
+<a href="#">Blogs</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="swiper-slide swiper-slide-prev" style="background-image: url(img/blogg3.png); width: 350px; transform: translate3d(-700px, 0px, 0px); opacity: 1; transition-duration: 0ms;" data-swiper-slide-index="1">
+<div class="slide-content">
+<div class="inner">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/architecture/">Architecture</a> -->
+</div>
+<h2 class="entry-title">
+<a href="#">Blogs</a>
+</h2>
+</div>
+</div></div>
+
+<!-- <div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div> -->
+</div>
+</div>
+<div class="container">
+<div id="main" class="site-main" role="main">
+<div class="post-grid col-3">
+<article class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog1.html">blog1</a>
+</div>
+<h2 class="entry-title"><a href="blog1.html">Oxagon: Concept of Floating City</a></h2>
+<br>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">24 November 2022</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog1.html">
+<img width="360" height="230" src="img/blog1.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">Exactly on the <a href="https://en.wikipedia.org/wiki/Red_Sea" style="color:#40739f">Red Sea,</a> located near the <a href="https://en.wikipedia.org/wiki/Suez_Canal" style="color:#40739f">Suez Canal, Saudi Arabia</a> is planning to build a floating city named as <a href="https://www.neom.com/en-us/regions/oxagon" style="color:#40739f">Oxagon...</p>
+<a class="more-link" href="blog1.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+<article class="post-348 post type-post status-publish format-audio has-post-thumbnail hentry category-decor category-interior tag-lifestyle tag-music post_format-post-format-audio appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/decor/">Decor</a> -->
+<a href="blog2.html">blog2</a>
+</div>
+<h2 class="entry-title"><a href="blog2.html">Artificial Moon on the Earth - Moon World Resorts, Dubai</a></h2>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="May 16, 2016">10 January 2023</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog2.html">
+<img width="360" height="230" src="img/blog2.png">
+</a>
+</div>
+<div class="entry-content">
+<p style="color:white;"><a href="https://en.wikipedia.org/wiki/Dubai" style="color:white;">Dubai</a> is known for its luxury hotels, shopping, and high-end real estate. Some of the most luxurious hotels in Dubai include <a href="https://www.jumeirah.com/en/stay/dubai/burj-al-arab-jumeirah" style="color:white;">the Burj Al Arab</a>,..</p>
+<a class="more-link" href="blog2.html/"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+<article class="post-328 post type-post status-publish format-video has-post-thumbnail hentry category-decor category-interior tag-health tag-healthyfood tag-lifestyle tag-superfood post_format-post-format-video appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/decor/">Decor</a> -->
+<a href="blog3.html">blog3</a>
+</div>
+<h2 class="entry-title"><a href="blog3.html">Personal and Professional: Values and Ethics</a></h2>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="May 16, 2016">28 December 2022</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog3.html">
+<img width="360" height="230" src="img/blog3.png"> 
+</a>
+</div>
+<div class="entry-content">
+<p style="color:white;">Many people don't know the difference between personal and professional ethics, but both need to be maintained while considering...</p>
+<a class="more-link" href="blog3.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog4.html">blog4</a>
+</div>
+<h2 class="entry-title"><a href="blog4.html">THE MYSTERIOUS PILLARS OF HAMPI</a></h2>
+<br>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">24 November 2022</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog4.html">
+<img width="360" height="230" src="img/blog4.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">Earth is a miracle and today I came with one such historical structure to explain my statement. Hampi- the place is well known for...</p>
+<a class="more-link" href="blog4.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog5.html">blog5</a>
+</div>
+<h2 class="entry-title"><a href="blog5.html">3 Steps to know the Purpose and Intent of your Life:</a></h2>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">22 November 2022</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog5.html">
+<img width="360" height="230" src="img/blog5.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">Nowadays, we all are so busy in our own lives. We start our day and end it like we spent yesterday. There is nothing new or...</p>
+<a class="more-link" href="blog5.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog6.html">blog6</a>
+</div>
+<h2 class="entry-title"><a href="blog6.html">HEAD: MUST DO SWOT ANALYSIS OF YOUR BUSINESS</a></h2>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">25 November 202</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog6.html">
+<img width="360" height="230" src="img/blog6.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">SWOT analysis makes you aware of the internal and external issues of your organization. Keep it checking for the sake of your business...</p>
+<a class="more-link" href="blog6.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                <a href="#">
+                                <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+
+
+
+
+
+
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog7.html">blog7</a>
+</div>
+<h2 class="entry-title"><a href="blog7.html"> "Office Chic: Navigating the Fine Line Between Professional and Fashionable"</a></h2><br>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">18 May 2023</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog7.html">
+<img width="360" height="230" src="img/blog7.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">Welcome to "Office Chic," the ultimate style guide for modern professionals who want to make a lasting impression at the...</p>
+<a class="more-link" href="blog7.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>   
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog8.html">blog8</a>
+</div>
+<h2 class="entry-title"><a href="blog8.html">RESET, RESTART, AND REFOCUS: KEYS TO REVITALIZE YOUR BUSINESS AT ANY STAGE</a></h2><br>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">19 May 2023</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog8.html">
+<img width="360" height="230" src="img/blog8.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">Introducing your business is an exciting journey filled with troubles and challenges. As an entrepreneur, you may encounter...</p>
+<a class="more-link" href="blog8.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog9.html">blog9</a>
+</div>
+<h2 class="entry-title"><a href="blog9.html">HUMAN AND TECHNOLOGY: A BATTLE FOR SUPREMACY OR AN EVOLUTIONARY ALLIANCE?</a></h2>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">20 May 2023</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog9.html">
+<img width="360" height="230" src="img/blog9.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">In an era defined by unprecedented technological advancements, the relatio nship between humans and....</p>
+<a class="more-link" href="blog9.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog10.html">blog10</a>
+</div>
+<h2 class="entry-title"><a href="blog10.html">Positive Effects: Unleashing the Health Benefits of Living with a Dog
+</a></h2>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">23 May 2023</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog10.html">
+<img width="360" height="230" src="img/blog10.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">Dogs have been our faithful companions for thousands of years, offering unconditional love, loyalty....</p>
+<a class="more-link" href="blog10.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+<!-- 11-->
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog11.html">blog11</a>
+</div>
+<h2 class="entry-title"><a href="blog11.html"> The Power of Collective Brilliance: Why Brainstorming is Vital for Your Team
+</a></h2>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">23 May 2023</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog11.html">
+<img width="360" height="230" src="img/blog11.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">In today's fast-paced and ever-evolving business landscape, teams are the driving force behind innovation and success.....</p>
+<a class="more-link" href="blog11.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+<!-- 12 -->
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog12.html">blog12</a>
+</div>
+<br>
+<h2 class="entry-title"><a href="blog12.html">Unleashing the Power of Boldness: Where Creativity Takes Flight
+</a></h2>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">23 May 2023</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog12.html">
+<img width="360" height="230" src="img/blog12.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">In a world filled with endless possibilities, it is those who dare to be bold that pave the way for extraordinary breakthroughs. Creativity, the....</p>
+<a class="more-link" href="blog12.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+<!-- 13 -->
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog13.html">blog13</a>
+</div>
+<br>
+<h2 class="entry-title"><a href="blog13.html">The Thrill of Learning: Revealing the Curiosity in Digital Marketing is everything businesses want</a></h2>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">25 May 2023</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog13.html">
+<img width="360" height="230" src="img/blog13.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">In today's fast-paced digital landscape, the curiosity to learn new things is not only beneficial but also essential.....</p>
+<a class="more-link" href="blog13.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+<!-- 14 -->
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog14.html">blog14</a>
+</div>
+<br>
+<h2 class="entry-title"><a href="blog14.html">Unlocking Success: Embracing the Power of Dreams</a></h2>
+<span class="posted-on">
+    <br><br>
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">26 May 2023</time>
+</span> 
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header><br><br>
+<div class="post-thumbnail">
+<a href="blog14.html">
+<img width="360" height="230" src="img/blog14.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">Dreams have fascinated humanity since time immemorial. These ephemeral experiences that unfold within....</p>
+<a class="more-link" href="blog14.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+<!-- 15th -->
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog15.html">blog15</a>
+</div>
+<br>
+<h2 class="entry-title"><a href="blog15.html">Wanderlust Therapy: Healing and Finding Relief through Travelling hilly and Mountain areas.</a></h2><br>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">26 May 2023</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog15.html">
+<img width="360" height="230" src="img/blog15.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">Life is a beautiful but often unpredictable journey filled with ups and downs. Throughout our lives, we encounter pain, be it ....</p>
+<a class="more-link" href="blog15.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+
+<!-- 16th -->
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog16.html">blog16</a>
+</div>
+<br>
+<h2 class="entry-title"><a href="blog16.html">Wanderlust Therapy: Healing and Finding Relief through Travelling hilly and Mountain areas.</a></h2><br>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">27 May 2023</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog16.html">
+<img width="360" height="230" src="img/blog16.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">Life is a beautiful but often unpredictable journey filled with ups and downs. Throughout our lives, we encounter pain, be it ....</p>
+<a class="more-link" href="blog16.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+<!-- 17th -->
+
+<article class="post-1 post type-post  status-publish format-standard has-post-thumbnail hentry category-art category-interior appeared">
+<header class="entry-header">
+<div class="cat-links">
+<!-- <a href="https://noemi.px-lab.com/architect/category/art/">Art</a> -->
+<a href="blog17.html">blog17</a>
+</div>
+<br>
+<h2 class="entry-title"><a href="blog17.html">Wanderlust Therapy: Healing and Finding Relief through Travelling hilly and Mountain areas.</a></h2><br>
+<span class="posted-on">
+<span class="screen-reader-text">Posted on </span>
+<time class="entry-date published updated" style="color:white;" datetime="March 1, 2017">27 May 2023</time>
+</span>
+<span class="byline">
+<span class="author vcard">
+<a class="url fn n" href="#">by - Krishna Mohod</a>
+</span>
+</span>
+</header>
+<div class="post-thumbnail">
+<a href="blog17.html">
+<img width="360" height="230" src="img/blog17.png"> </a>
+</div>
+<div class="entry-content">
+<p style="color:white;">Life is a beautiful but often unpredictable journey filled with ups and downs. Throughout our lives, we encounter pain, be it ....</p>
+<a class="more-link" href="blog17.html"></a>
+</div>
+<footer class="entry-footer" data-aos="flip-down" data-aos-duration=1000>
+                                <div class="post-comments">
+                                    <a href="#">
+                                        <i class="fa-sharp fa-regular fa-comment"></i>
+                                        <span>1</span>
+                                    </a>
+                                </div>
+                                <div class="post-share-box">
+                                    <ul>
+                                        <li style="color: black;">Share</li>
+                                        <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                </ul>
+                                </div>
+                            </footer>
+</article>
+
+</a></p></div></article></div></div>
+
+<!--  -->
+
+ <div id="sticky-border"></div>
+        </div>
+        <div id="instagram-footer" class="instagram-footer ri-grid ri-grid-loading">
+            <h4 class="title">Follow @Mozes Gadker</h4>
+        </div>
+        <footer id="footer" class="footer" >
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="widget widget-social">
+                                <div class="horizontal">
+                                    <ul class="social">
+                                    <li><a href="https://www.facebook.com/mozes.gadker"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/mozesgadker/"
+                                            target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a  href="https://www.linkedin.com/in/mozes-gadker-5795a815b/"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i>   </a></li>
+                                    <li><a  href="https://www.instagram.com/mozes_official/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a id="top" href="#"></a>
+                <div class="copy-right">Copyright © 2023.</div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript"
+        src="https://noemi.px-lab.com/personal-view/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7"
+        id="regenerator-runtime-js"></script>
+    <script type="text/javascript"
+        src="https://noemi.px-lab.com/personal-view/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"
+        id="wp-polyfill-js"></script>
+    <script type="text/javascript" id="contact-form-7-js-extra">
+        /* <![CDATA[ */
+        var wpcf7 = { "api": { "root": "https:\/\/noemi.px-lab.com\/personal-view\/wp-json\/", "namespace": "contact-form-7\/v1" } };
+/* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="https://noemi.px-lab.com/personal-view/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.4"
+        id="contact-form-7-js"></script>
+    <script type="text/javascript"
+        src="https://noemi.px-lab.com/personal-view/wp-includes/js/imagesloaded.min.js?ver=4.1.4"
+        id="imagesloaded-js"></script>
+    <script type="text/javascript" src="https://noemi.px-lab.com/personal-view/wp-includes/js/masonry.min.js?ver=4.2.2"
+        id="masonry-js"></script>
+    <script type="text/javascript"
+        src="https://noemi.px-lab.com/personal-view/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b"
+        id="jquery-masonry-js"></script>
+    <script type="text/javascript"
+        src="https://noemi.px-lab.com/personal-view/wp-content/themes/noemi/js/scripts.min.js?ver=5.8.6"
+        id="scripts-js"></script>
+    <script type="text/javascript" src="https://noemi.px-lab.com/personal-view/wp-includes/js/wp-embed.min.js?ver=5.8.6"
+        id="wp-embed-js"></script>
+    <script type="text/javascript"
+        src="https://noemi.px-lab.com/personal-view/wp-content/themes/noemi/js/libs/html5shiv.min.js?ver=5.8.6"
+        id="htmlshiv-js"></script>
+    <script type="text/javascript" id="mc4wp-forms-api-js-extra">
+        /* <![CDATA[ */
+        var mc4wp_forms_config = [];
+/* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="https://noemi.px-lab.com/personal-view/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min.js?ver=3.1.7"
+        id="mc4wp-forms-api-js"></script>
+    <script type="text/javascript">(function () {
+            function addEventListener(element, event, handler) {
+                if (element.addEventListener) {
+                    element.addEventListener(event, handler, false);
+                } else if (element.attachEvent) {
+                    element.attachEvent('on' + event, handler);
+                }
+            }
+        })();</script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+
+</body>
+
+</html>
